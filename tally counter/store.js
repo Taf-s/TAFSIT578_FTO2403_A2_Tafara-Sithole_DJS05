@@ -1,15 +1,26 @@
-import { add, subtract, reset } from "./actions";
+// Create Store
+const createStore = (reducer) => {
+  let state;
+  let listeners = [];
 
-// Reducer
-const reducer = (state = 0, action) => {
-  switch (action.type) {
-    case add.type:
-      return { count: state.count + 1 };
-    case subtract.type:
-      return { count: state.count - 1 };
-    case reset.type:
-      return { count: 0 };
-    default:
-      return state;
-  }
+  const getState = () => state;
+
+  const dispatch = (action) => {
+    state = reducer(state, action);
+    listeners.forEach((listener) => listener());
+  };
+
+  const subscribe = (listener) => {
+    listeners.push(listener);
+    return () => {
+      listeners = listeners.filter((l) => l !== listener);
+    };
+  };
+
+  // Initialize the state
+  dispatch({});
+
+  return { getState, dispatch, subscribe };
 };
+
+export default createStore;
