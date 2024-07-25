@@ -12,4 +12,4 @@ const reducer = (state = { count: 0 }, action) => {
   }
 };
 
-export default reducer;
+module.exports = reducer;

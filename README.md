@@ -64,6 +64,24 @@ THEN the state should display a count of 0
 
 - How to run the code.
 
+1. **Open Terminal or Command Prompt**
+
+   Navigate to your project directory if you are not already there:
+
+   ```sh
+   cd path/to/your/tally-counter
+   ```
+
+2. **Run the `index.js` File**
+
+   Execute the `index.js` file using Node.js:
+
+   ```sh
+   node index.js
+   ```
+
+   This will run your JavaScript code and log the state changes to the console.
+
 - Brief overview of approach.
 
 - Any challenges you faced and how you overcame them.

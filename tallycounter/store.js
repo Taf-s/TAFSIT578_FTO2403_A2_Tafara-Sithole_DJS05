@@ -23,4 +23,4 @@ const createStore = (reducer) => {
   return { getState, dispatch, subscribe };
 };
 
-export default createStore;
+module.exports = createStore;
