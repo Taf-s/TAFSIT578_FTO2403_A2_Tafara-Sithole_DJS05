@@ -84,4 +84,11 @@ THEN the state should display a count of 0
 
 - Brief overview of approach.
 
+  This approach follows a simplified Redux pattern with action creators, a reducer, and a store. The store manages the state and allows for dispatching actions
+  and subscribing to state changes. This approach provides a clear and modular structure for managing state in a JavaScript application.
+
 - Any challenges you faced and how you overcame them.
+
+  Wrapping my head around implementing the store without having to use Redux but with a Redux inspired approach was quite challenging.
+  I overcame this by breaking down the process of creating the store with the different state management functions, getting the initial state, dispatching actions and
+  then subscribing to the store.
