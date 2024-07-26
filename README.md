@@ -92,3 +92,5 @@ THEN the state should display a count of 0
   Wrapping my head around implementing the store without having to use Redux but with a Redux inspired approach was quite challenging.
   I overcame this by breaking down the process of creating the store with the different state management functions, getting the initial state, dispatching actions and
   then subscribing to the store.
+
+## Loom Video Link
