@@ -94,3 +94,5 @@ THEN the state should display a count of 0
   then subscribing to the store.
 
 ## Loom Video Link
+
+ https://www.loom.com/share/61c1c186dbc64c2686bc7ed401cec24b?sid=3da1e081-7d89-44df-964d-c5724ae3e8f7
