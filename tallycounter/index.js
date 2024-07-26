@@ -10,6 +10,9 @@ store.subscribe(() => {
   console.log("State changed:", store.getState());
 });
 
+// Get initial state
+console.log("Initial state:", store.getState());
+
 // Dispatch actions
 store.dispatch(add()); // State changed: { count: 1 }
 store.dispatch(add()); // State changed: { count: 2 }
